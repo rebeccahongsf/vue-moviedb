@@ -26,7 +26,7 @@
           const movies = await res.json();
           this.movies = movies.results;
         } catch(e) {
-          console.lof(e)
+          console.log(e)
         }
       }
     },

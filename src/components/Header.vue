@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>{{newTitle}}</h1>
+    <h1><router-link to="/">{{title}}</router-link></h1>
   </header>
 </template>
 
@@ -9,16 +9,6 @@ export default {
   name: "Header",
   props: {
     title: String,
-  },
-  data() {
-    return {
-      name: 'Rebecca'
-    }
-  },
-  computed: {
-    newTitle: function() {
-      return this.title
-    }
   }
 }
 </script>
@@ -32,5 +22,10 @@ header {
 
 h1 {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
