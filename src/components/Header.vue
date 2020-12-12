@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     newTitle: function() {
-      return this.title.split('').reverse().join('');
+      return this.title
     }
   }
 }
@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 header {
-  background: #111;
+  background: #809B8E;
   padding: 20px;
   color: white;
 }
