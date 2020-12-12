@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header :title="title" />
+    <MoviesList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import MoviesList from './components/MoviesList.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      title: "Vue Movie DB",
+      isTrue: false,
+    }
+  },
   components: {
-    HelloWorld
+    Header,
+    MoviesList,
   }
 }
 </script>
